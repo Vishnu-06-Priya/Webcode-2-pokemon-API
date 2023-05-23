@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  background: url("https://images.unsplash.com/photo-1638613067237-b1127ef06c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+  background-size: cover;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: white
+    url("https://raw.githubusercontent.com/LeandroTk/pokemon/master/resources/images/pokemon-cover.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: center;
+  color: white;
+  min-height: 30vh;
+  max-height: auto;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  margin: 0.5%;
+  visibility: hidden;
+}
+
+.content-responsive {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.card {
+  margin: 2% 3%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgb(54, 129, 148);
+  border-radius: 10px;
+  padding: 2% 0%;
+  text-align: center;
+  background-image: linear-gradient(rgb(4, 5, 108), rgb(212, 241, 241));
+}
+
+img {
+  width: 200px;
+  height: 180px;
+  margin: 0 10%;
+}
+
+.abilities li,
+.weight span {
+  list-style-position: inside;
+  width: 50%;
+  margin: 0 auto;
+  color: #446a46;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.abilities,
+.weight {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.moves-responsive {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  max-height: 60vh;
+}
+
+.details {
+  margin-top: 10%;
+}
+
+.details .name {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.details .name span {
+  color: #446a46;
+  font-size: 1.5rem;
+}
+
+.tableArea {
+  width: 50%;
+  float: left;
+  overflow: auto;
+}
+
+.infoArea {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.infoArea img {
+  width: 30%;
+  margin: 0 7%;
+  border: 3px solid rgb(3, 97, 238);
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(253, 50, 50), rgb(212, 241, 241));
+}
+
+.infoArea .name {
+  color: #816700;
+  font-weight: bold;
+  font-family: sans-serif;
+  border: 3px solid rgb(3, 97, 238);
+  font-size: 1.75rem;
+  background-color: white;
+}
+
+.table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tableTitle {
+  background-image: linear-gradient(#ffcb05, white);
+  color: #0078aa;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-right: none;
+  width: 10%;
+  font-size: 1rem;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+}
+
+td {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+tr {
+  background-color: #d9f8c4;
+}
+tr:nth-child(even) {
+  background-color: #ffcb05;
+}
+
+.buttons {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 50%;
+}
+
+.moves {
+  margin: 5% 0%;
+}
+
+.reload {
+  margin: 3% 3%;
+  border: 2px solid #037ae9;
+  color: #037ae9;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-image: linear-gradient(rgb(172, 236, 233), rgb(212, 241, 241));
+  width: 20%;
+}
+
+.buttons button,
+.moves {
+  padding: 0.5% 1.1%;
+  border: 1px solid #f0ebe3;
+  color: #0078aa;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-image: linear-gradient(rgb(172, 236, 233), rgb(212, 241, 241));
+}
+
+.buttons button:hover,
+.moves:hover,
+.reload:hover {
+  color: #fafdd6;
+  background-image: linear-gradient(rgb(253, 50, 50), rgb(212, 241, 241));
+  cursor: pointer;
+}
+
+.active {
+  color: #0078aa !important;
+  background-image: linear-gradient(
+    rgb(253, 50, 50),
+    rgb(212, 241, 241)
+  ) !important;
+  border-radius: 5px !important;
+}
+
+@media (max-width: 800px) {
+  .content-responsive {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 40%;
+    height: 30%;
+    float: left;
+  }
+  .card {
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .details {
+    width: 50%;
+  }
+
+  .buttons button {
+    padding: 2% 3%;
+    font-size: 0.65rem;
+  }
+
+  .tableTitle {
+    width: 50%;
+  }
+
+  .infoArea {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoArea .name {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .infoArea img {
+    width: 80%;
+  }
+  .reload {
+    width: 60%;
+  }
+
+  .abilities li,
+  .weight span {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .title-box {
+    background-size: 100% 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 801px) {
+  .buttons button {
+    font-size: 1.5rem;
+  }
+  td {
+    font-size: 1rem;
+  }
+}
